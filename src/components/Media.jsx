@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
+import bookImage from '/book.jpg';
 
 const Media = () => {
   const [activeTab, setActiveTab] = useState('videos')
@@ -15,7 +16,7 @@ const Media = () => {
     publisher: 'Self Published',
     year: '2025',
     description: 'An inspiring account of transforming traditional agriculture through cow-based natural farming techniques in Manipur. This book chronicles the practical implementation of integrated organic farming, combining ancient wisdom with modern sustainability practices to create a thriving, chemical-free agricultural ecosystem.',
-    coverImage: 'public/book.jpg',
+    coverImage: bookImage,
     link: '#' // Add purchase/info link if available
   }
 
