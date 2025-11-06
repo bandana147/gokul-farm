@@ -8,6 +8,17 @@ const Media = () => {
     triggerOnce: true
   })
 
+  // Featured Book Information
+  const featuredBook = {
+    title: 'The Success Story of Cow Based Natural Farming in Manipur',
+    author: 'Laishram Gokulchandra Singh',
+    publisher: 'Self Published',
+    year: '2025',
+    description: 'An inspiring account of transforming traditional agriculture through cow-based natural farming techniques in Manipur. This book chronicles the practical implementation of integrated organic farming, combining ancient wisdom with modern sustainability practices to create a thriving, chemical-free agricultural ecosystem.',
+    coverImage: 'public/book.jpg',
+    link: '#' // Add purchase/info link if available
+  }
+
   const videos = [
     {
       title: 'Organic Farming Success Story',
@@ -73,6 +84,48 @@ const Media = () => {
           <div className="title-underline"></div>
           <p className="section-description">Gokul's Farm in the spotlight</p>
         </div>
+
+        {/* Featured Book Section */}
+        <div className="featured-book" ref={ref}>
+          <div className={`book-banner ${inView ? 'animate-in' : ''}`}>
+            <div className="book-cover">
+              <img 
+                src={featuredBook.coverImage} 
+                alt={featuredBook.title}
+                onError={(e) => {
+                  e.target.style.display = 'none'
+                  e.target.nextSibling.style.display = 'flex'
+                }}
+              />
+              <div className="book-placeholder" style={{ display: 'none' }}>
+                <span className="book-icon">📚</span>
+              </div>
+            </div>
+            <div className="book-details">
+              <div className="book-badge">📖 Featured Publication</div>
+              <h3 className="book-title">{featuredBook.title}</h3>
+              <div className="book-meta">
+                <span className="book-author">By {featuredBook.author}</span>
+                <span className="book-separator">•</span>
+                <span className="book-publisher">{featuredBook.publisher}</span>
+                <span className="book-separator">•</span>
+                <span className="book-year">{featuredBook.year}</span>
+              </div>
+              <p className="book-description">{featuredBook.description}</p>
+              {featuredBook.link !== '#' && (
+                <a 
+                  href={featuredBook.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="book-link-button"
+                >
+                  Learn More →
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+
         <div className="media-content">
           <div className="media-tabs">
             <button 

@@ -29,11 +29,11 @@ const Products = () => {
       tag: 'For Gardens'
     },
     {
-      badge: 'New',
-      icon: '🥛',
-      title: 'Dairy Products',
-      description: 'Pure A2 milk and dairy from indigenous cows',
-      tag: 'A2 Quality'
+      badge: 'Premium',
+      icon: '🧡',
+      title: 'Organic Turmeric',
+      description: 'High-quality, naturally grown turmeric with high curcumin content',
+      tag: 'Medicinal Grade'
     }
   ]
 

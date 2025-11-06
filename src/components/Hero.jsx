@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import farmImg from '/farm.jpg'
 
 const Hero = () => {
   const [parallaxOffset, setParallaxOffset] = useState(0)
@@ -24,7 +25,13 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="hero">
+    <section 
+      id="home" 
+      className="hero"
+      style={{
+        backgroundImage: `linear-gradient(135deg, rgba(45, 80, 22, 0.85) 0%, rgba(107, 142, 35, 0.85) 100%), url(${farmImg})`
+      }}
+    >
       <div className="hero-overlay"></div>
       <div 
         className="hero-content" 

@@ -40,10 +40,10 @@ const Navbar = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'crops', label: 'Our Crops' },
-    { id: 'practices', label: 'Organic Practices' },
     { id: 'products', label: 'Products' },
+    // { id: 'crops', label: 'Our Crops' },
     { id: 'media', label: 'Media' },
+    { id: 'practices', label: 'Organic Practices' },
     { id: 'contact', label: 'Contact' }
   ]
 

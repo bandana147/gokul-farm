@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: '📍',
       title: 'Visit Our Farm',
-      content: 'Gokul\'s Integrated Farming\n[Your Village Name]\n[District, State - PIN]'
+      content: 'Gokul\'s Integrated Farming\nShunushiphai\nBishnupur District, Manipur'
     },
     {
       icon: '📞',

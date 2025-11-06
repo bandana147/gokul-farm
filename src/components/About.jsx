@@ -1,4 +1,5 @@
 import { useInView } from 'react-intersection-observer'
+import profileImg from '/profile.jpg'
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -60,7 +61,7 @@ const About = () => {
           </div>
           <div className={`about-image ${inView ? 'animate-in' : ''}`}>
             <img 
-              src="/profile.jpg" 
+              src={profileImg} 
               alt="Gokul's Farm" 
               className="farm-image"
             />

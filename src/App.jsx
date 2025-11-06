@@ -22,10 +22,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Crops />
-      <Practices />
       <Products />
+      {/* <Crops /> */}
       <Media />
+      <Practices />
       <Contact />
       <Footer />
       <ScrollToTop />
